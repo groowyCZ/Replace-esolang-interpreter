@@ -1,2 +1,2 @@
-# Replace-esolang-interpreter
+# Replace (esolang) interpreter
 An interpreter for Replace in C++
