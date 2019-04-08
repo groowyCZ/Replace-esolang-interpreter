@@ -12,7 +12,7 @@ vector<string> splitter(string in_pattern, string& content) {
 	return split_content;
 }
 
-string interpreter(string program, string separator, bool debug) {
+string interpreter(string program, bool debug, string separator) {
 
 	vector<string> lines = splitter(R"(\n)", program);
 	int i = 0;
@@ -42,7 +42,7 @@ string interpreter(string program, string separator, bool debug) {
 }
 
 string interpreter(string code){
-	return interpreter(code, "/", false);
+	return interpreter(code, false, "/");
 }
 
 int main(int argc, char const *argv[]) {
